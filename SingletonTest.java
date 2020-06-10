@@ -25,7 +25,9 @@ class Renban{
     }
 
     public String getNumber(){
-        number += 1;
+        if(number < 1000){
+            number += 1;
+        }
         String str = String.format("%04d", number);
         return str;
     }
